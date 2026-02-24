@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Help Desk - Dashboard</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-top">
+      <div class="logo">HD</div>
+      <div class="brand">
+        <div class="title">Help Desk</div>
+        <div class="muted small" id="roleBadge">Role</div>
+      </div>
+      <button class="icon-btn" id="closeSidebar" title="Close">✕</button>
+    </div>
+
+    <nav class="nav" id="nav"></nav>
+
+    <div class="sidebar-bottom">
+      <button class="btn" id="logoutBtn">Logout</button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <button class="icon-btn" id="openSidebar" title="Menu">☰</button>
+      <div class="topbar-title" id="pageTitle">Dashboard</div>
+      <div class="topbar-right">
+        <div class="pill" id="userPill">User</div>
+      </div>
+    </header>
+
+    <section class="content">
+      <div id="pageArea"></div>
+    </section>
+  </main>
+
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

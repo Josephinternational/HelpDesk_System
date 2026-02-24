@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Help Desk - Login</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="auth-page">
+  <div class="auth-card">
+    <div class="auth-brand">
+      <div>
+        <h1>Help Desk</h1>
+        <p class="muted">Login or create an account</p>
+      </div>
+    </div>
+    <p>
+  <a href="forgot_password.html">Forgot password?</a>
+</p>
+    <div class="tabs">
+      <button class="tab active" data-tab="login">Login</button>
+      <button class="tab" data-tab="register">Register</button>
+    </div>
+
+    <div id="alert" class="alert hidden"></div>
+
+    <form id="loginForm" class="form">
+      <label>Email</label>
+      <input type="email" name="email" placeholder="you@example.com" required />
+      <label>Password</label>
+      <input type="password" name="password" placeholder="Your password" required />
+      <button class="btn primary" type="submit">Login</button>
+      <p class="muted small">Admin/Tech can login using their accounts.</p>
+    </form>
+
+    <form id="registerForm" class="form hidden">
+      <label>Full Name</label>
+      <input type="text" name="full_name" placeholder="Joseph Mwewa" required />
+      <label>Email</label>
+      <input type="email" name="email" placeholder="you@example.com" required />
+      <label>Password</label>
+      <input type="password" name="password" placeholder="Min 6 characters" required />
+      <button class="btn primary" type="submit">Create account</button>
+      <p class="muted small">New accounts are created as <b>User</b>. Admin can change roles later.</p>
+    </form>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
